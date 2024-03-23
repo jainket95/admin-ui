@@ -25,7 +25,7 @@ const Pagination = ({
 				{"<"}
 			</div>
 
-			{Array.from({ length: totalPages }, (v, i) => i + 1).map((item, idx) => (
+			{Array.from({ length: totalPages }, (_, i) => i + 1).map((item, idx) => (
 				<div
 					className={clsx(
 						"pagination_item flex-center-center",
