@@ -7,7 +7,6 @@
 		width: 5rem;
 		height: 5rem;
 		border-radius: 100%;
-		border-color: rgb(150, 147, 147);
 		background-color: rgba(126, 122, 122, 0.8);
 		color: white;
 		font-size: 1.4rem;
@@ -15,9 +14,9 @@
 			margin-right: 2rem;
 		}
 
-		.active {
-			background-color: rgba(255, 255, 255, 0.829);
-			border-color: rgba(255, 255, 255, 0.829);
+		&.active {
+			color: black;
+			background-color: rgba(255, 255, 255, 0.609);
 		}
 	}
 }

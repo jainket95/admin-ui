@@ -25,11 +25,11 @@ const Pagination = ({
 				{"<"}
 			</div>
 
-			{Array.from({ length: totalPages }, (_, i) => i + 1).map((item, idx) => (
+			{Array.from({ length: totalPages }, (_, i) => i + 1).map((item) => (
 				<div
 					className={clsx(
 						"pagination_item flex-center-center",
-						page === idx && "active"
+						page === item && "active"
 					)}
 					key={item}
 					onClick={handlePageChange.bind(null, item)}>
