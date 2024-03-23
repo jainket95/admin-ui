@@ -1,5 +1,6 @@
 table {
 	width: 100%;
+	height: 100%;
 	border-collapse: collapse;
 
 	thead,
@@ -36,6 +37,18 @@ table {
 			outline: none;
 			border-bottom: 1px solid grey;
 			background: transparent;
+		}
+	}
+
+	button {
+		outline: none;
+		border: none;
+		text-decoration: none;
+		background-color: transparent;
+		margin-top: 0.8rem;
+
+		&.edit {
+			margin-right: 2rem;
 		}
 	}
 }

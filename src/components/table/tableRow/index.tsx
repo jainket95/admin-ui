@@ -69,8 +69,7 @@ const TableRow = ({
 			<tbody>
 				{rows.map((row) => (
 					<tr key={row.id}>
-						<td colSpan={1} className="flex-sb-center">
-							<div>{row.id}</div>
+						<td colSpan={1}>
 							<Checkbox
 								isChecked={row.isChecked}
 								text={row.id}
@@ -82,7 +81,7 @@ const TableRow = ({
 							if (item === "actions") {
 								return (
 									<td
-										className="flex-start-center"
+										className="flex-sb-center"
 										key={`action-${j}`}
 										colSpan={6}>
 										<button
