@@ -1,0 +1,22 @@
+.App {
+	width: 100vw;
+	height: auto;
+
+	&.Container {
+		max-width: 145rem;
+		margin: 0 auto;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		&.Container {
+			width: 100%;
+			max-width: 100%;
+			padding: 0 4rem;
+		}
+	}
+	@media only screen and (max-width: 640px) {
+		&.Container {
+			padding: 0 2rem;
+		}
+	}
+}
